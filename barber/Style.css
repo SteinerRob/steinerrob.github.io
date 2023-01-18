@@ -1,0 +1,9 @@
+.grid-container{
+    display: grid;
+    column-gap: 5px;
+    grid-row: auto;
+    grid-column: auto;
+    row-gap: 5px;
+    background-color: red;
+
+}
