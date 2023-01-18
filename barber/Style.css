@@ -1,9 +1,5 @@
-.grid-container{
+.grid-container {
     display: grid;
-    column-gap: 5px;
-    grid-row: auto;
-    grid-column: auto;
-    row-gap: 5px;
-    background-color: red;
-
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
 }
