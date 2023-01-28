@@ -4,26 +4,62 @@ html, body {
 	max-height: 100vh;
 	max-width: 100vw;
 	overflow: hidden;
-   
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-	align-items: center;
-}
+
 #overlay {
 	position: absolute; 
 	width: 100vw; 
 	height: 100vh;
 	background-color: rgba(0,0,0,0.6);
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0px solid rgba(0, 0, 0, 0.8);
-  padding: 0px;
-  font-size: 30px;
-  text-align: center;
-  background-size: cover;
-  min-height: 33.4vh;
-  min-width: 25vw;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+	align-items: center;
 }
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 0px solid rgba(0, 0, 0, 0.8);
+	padding: 0px;
+	font-size: 30px;
+	text-align: center;
+	background-size: cover;
+	min-height: 33.4vh;
+	min-width: 25vw;
+  }
+
+#button {
+	position: absolute;
+	top:  60%;
+    left: 50%;    transform: translate(-50%,-50%);
+	background-color: rgba(220, 147, 11, 0.6);
+	width: 100 px;
+	border-radius: 5px;
+}
+
+#button:hover {
+	background-color: rgba(220, 147, 11, 0.9);
+}
+@media (orientation: landscape) and (max-height: 200px){
+	.grid-item {min-height: 100vh;}
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+  
+
