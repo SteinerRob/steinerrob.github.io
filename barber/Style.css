@@ -10,7 +10,7 @@ html, body {
 	position: absolute; 
 	width: 100vw; 
 	height: 100vh;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.8);
 }
 
 .grid-container {
@@ -30,16 +30,60 @@ html, body {
 	min-width: 25vw;
   }
 
+  #headtitle {
+	position: absolute;
+	top:  20%;
+    left: 50%;  
+	color: white;
+	text-align: center;
+	transform: translate(-50%,-50%);
+}
+#contact {
+	position: absolute;
+	top:  40%;
+    left: 50%;  
+	color: white;
+	text-align: center;
+	transform: translate(-50%,-50%);
+}
 #button {
 	position: absolute;
 	top:  60%;
     left: 50%;    
 	transform: translate(-50%,-50%);
+
 	background-color: rgba(220, 147, 11, 0.6);
 	width: 100 px;
 	border-radius: 5px;
 }
+#map-button {
+	position: absolute;
+	top:  70%;
+    left: 50%;    
+	transform: translate(-50%,-50%);
 
+	background-color: rgba(220, 147, 11, 0.6);
+	width: 100 px;
+	border-radius: 5px;
+}
+#ig-button {
+	position: absolute;
+	top:  80%;
+    left: 50%;    
+	transform: translate(-50%,-50%);
+	background-image:url('media/iglogo.png') ;
+	background-size: cover;
+	opacity: 0.6;
+	min-width: 50px;
+	min-height: 50px;
+	border-radius: 5px;
+}
+#map-button:hover {
+	background-color: rgba(220, 147, 11, 0.9);
+}
+#ig-button:hover {
+	opacity: 1;
+}
 #button:hover {
 	background-color: rgba(220, 147, 11, 0.9);
 }
