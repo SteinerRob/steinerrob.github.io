@@ -254,6 +254,9 @@ html, body{
     transform:translate(-50%, -50%);
 }
  @media screen and (max-width:767px){
+    #blog{
+        float: none !important;
+    }
     .btn-holder{
         top:102px;
         right:0;
@@ -641,7 +644,7 @@ html, body{
     height:100%;
 }
  #v-card-holder #v-card .links .social{
-    margin-left:12px;
+    margin-left:0px;
     margin-bottom:4px;
 }
  #v-card-holder #v-card .links .social i{
@@ -785,6 +788,7 @@ html, body{
 }
  #blog{
      float: left;
+     margin-right: 10px;
 }
  #blog .blog-btn{
     height:auto;
@@ -796,9 +800,8 @@ html, body{
  #blog .blog-btn .btn{
     background:#06A763;
     color:#282828;
-    width:140px;
+    width:100px;
     border-radius:2px;
-     margin-top: 15px;
 }
  #blog .blog-btn .btn:hover{
     background:#05985a;
