@@ -399,6 +399,7 @@ to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
 #blog .blog .image{height:20em;width:100%;}
 #blog .blog .content{text-align:center;width:100%;}
 }
+.blog-blog{  text-align: left !important;}
 #contact .card .card-content{text-align: left;}
 #contact .card .card-content .input-field{position:relative;margin-top:1rem;margin-bottom:12px;}
 #contact .card .card-content .input-field label{left:0;font-weight:normal;top:0.5rem;}
