@@ -10,7 +10,7 @@ html, body {
 	position: absolute; 
 	width: 100vw; 
 	height: 100vh;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.9);
 }
 
 .grid-container {
@@ -31,12 +31,9 @@ html, body {
   }
 
   #headtitle {
-	position: absolute;
-	top:  20%;
-    left: 50%;  
 	color: white;
 	text-align: center;
-	transform: translate(-50%,-50%);
+	font-size: 50px;
 }
 #contact {
 	position: absolute;
@@ -46,31 +43,35 @@ html, body {
 	text-align: center;
 	transform: translate(-50%,-50%);
 }
-#button {
+#buttons {
 	position: absolute;
 	top:  60%;
     left: 50%;    
 	transform: translate(-50%,-50%);
+	display: flex;
+	grid-gap: 20px;
+	align-items: center;
+
+	
+}
+#button {
+	
 
 	background-color: rgba(220, 147, 11, 0.6);
 	width: 100 px;
+	height: 50px;
 	border-radius: 5px;
+
 }
 #map-button {
-	position: absolute;
-	top:  70%;
-    left: 50%;    
-	transform: translate(-50%,-50%);
+	
 
 	background-color: rgba(220, 147, 11, 0.6);
 	width: 100 px;
+	height: 50px;
 	border-radius: 5px;
 }
 #ig-button {
-	position: absolute;
-	top:  80%;
-    left: 50%;    
-	transform: translate(-50%,-50%);
 	background-image:url('media/iglogo.png') ;
 	background-size: cover;
 	opacity: 0.6;
