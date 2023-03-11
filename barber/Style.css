@@ -53,11 +53,12 @@ html, body {
 }
 #buttons {
 	position: absolute;
-	top:  80%;
-    left: 45%;    
+	top:  85%;
+    left: 40%;    
 	display: flex;
 	grid-gap: 20px;
 	align-self: center;
+	width: 20%;
 }
 #button {
 	background-color: transparent;
@@ -89,7 +90,7 @@ html, body {
 	border-radius: 5px;
 	border: 0px;
 	opacity: 0.6;
-
+	
 }
 #ig-button {
 	background-size: cover;
@@ -98,6 +99,8 @@ html, body {
 	height: 50px;
 	border-radius: 5px;
 	border: 0px;
+	
+
 }
 #map-button:hover {
 opacity: 1;
