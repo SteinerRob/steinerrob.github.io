@@ -33,13 +33,6 @@ html, body {
 	background-size: cover;
 	min-height: 33.4vh;
 	min-width: 25vw;
-  }
- 
-  #headtitle {
-	color: white;
-	text-align: center;
-	font-size: 50px;
-	margin: 0px;
 }
 #contact {
 	position: absolute;
@@ -121,29 +114,65 @@ opacity: 1;
 	opacity: 1;
 	
 }
+
 #headtitle {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	margin: 0px;
 	font-family: RobotoFontH1;
+
 }
 
 
 
-@media (min-width: 330px){
-	.grid-item {min-width: 50vw;}
-}
-@media (min-width: 500px){
-	.grid-item {min-width: 33,4vw;}
-}
-@media (min-width: 800px){
-	.grid-item {min-width: 25vw;}
-}
+@media only screen and (min-width:501px) and (max-width: 950px) {
+	#contact {
+		position: absolute;
+		display: grid;
+		grid-gap: 10px;
+		top:  40%;
+		left: 50%;  
+		color: white;
+		text-align: center;
+		transform: translate(-50%,-50%);
+	}
+	#bg-icon{
+		width: 150px;
+	}
+	#headtitle{
+		font-size: 35px;
+	}
 
-@media(max-height: 400px){
-	.grid-item{min-height: 100vh;}
-}
-
-@media(min-height: 800px){
-	.grid-item{min-height: 33.3vh;}
-}
+  }
+  @media only screen and (max-width: 500px) {
+	#contact {
+		position: absolute;
+		display: grid;
+		grid-gap: 10px;
+		top:  30%;
+		left: 50%;  
+		color: white;
+		text-align: center;
+		transform: translate(-50%,-50%);
+	}
+	#bg-icon{
+		width: 100px;
+	}
+	#headtitle{
+		font-size: 26px;
+	}
+	#buttons {
+		position: absolute;
+		top:  70%;
+		left: 37%;    
+		display: flex;
+		grid-gap: 20px;
+		align-self: center;
+		width: 20%;
+	}
+  }
+  
 
 
 
