@@ -41,7 +41,7 @@ body {
     display: grid;
     grid-gap: 10px;
     top: 40%;
-    left: 50%;
+    left: 50%; 
     color: white;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -185,5 +185,18 @@ body {
         grid-gap: 20px;
         align-self: center;
         width: 20%;
+    }
+}
+@media screen and (max-height: 490px)
+{
+    #bg-icon {
+        width: 100px;
+
+    }
+    #button{
+        height: 40px;
+    }
+    #links{
+        font-size: 15px;
     }
 }
