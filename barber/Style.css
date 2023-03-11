@@ -151,6 +151,7 @@ body {
 
     #headtitle {
         font-size: 35px;
+        color: blue !important;
     }
 
 }
@@ -173,6 +174,7 @@ body {
 
     #headtitle {
         font-size: 26px;
+        color: red !important;
     }
 
     #buttons {
