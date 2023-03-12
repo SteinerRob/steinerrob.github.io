@@ -10,6 +10,7 @@ body {
     max-height: 100vh;
     max-width: 100vw;
     overflow: hidden;
+    height: -webkit-fill-available;
 }
 
 #overlay {
@@ -196,6 +197,7 @@ body {
     }
     .links{
         font-size: 15px;
+        color: green;
     }
     #map-button {
         width: 25px;
