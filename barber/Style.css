@@ -150,7 +150,6 @@ body {
 
     #headtitle {
         font-size: 35px;
-        color: blue !important;
     }
 
 }
@@ -173,7 +172,6 @@ body {
 
     #headtitle {
         font-size: 26px;
-        color: red !important;
     }
 
     #buttons {
@@ -200,7 +198,6 @@ body {
     }
     .links{
         font-size: 15px;
-        color: green;
     }
     #map-button {
         width: 25px;
