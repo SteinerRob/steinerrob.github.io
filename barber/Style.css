@@ -98,8 +98,6 @@ body {
     height: 50px;
     border-radius: 5px;
     border: 0px;
-
-
 }
 
 #map-button:hover {
@@ -198,5 +196,22 @@ body {
     }
     #links{
         font-size: 15px;
+    }
+    #map-button {
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        border: 0px;
+        opacity: 0.6;
+    
+    }
+    
+    #ig-button {
+        background-size: cover;
+        opacity: 0.6;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        border: 0px;
     }
 }
