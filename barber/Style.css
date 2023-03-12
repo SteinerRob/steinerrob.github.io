@@ -189,8 +189,11 @@ body {
 @media screen and (max-height: 490px)
 {
     #bg-icon {
-        width: 100px;
+        width: 80px;
 
+    }
+    #headtitle{
+        font-size: 20px;
     }
     #button{
         height: 40px;
