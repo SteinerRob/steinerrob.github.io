@@ -194,7 +194,7 @@ body {
     #button{
         height: 40px;
     }
-    #links{
+    .links{
         font-size: 15px;
     }
     #map-button {
