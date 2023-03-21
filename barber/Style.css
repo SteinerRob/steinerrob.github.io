@@ -1,6 +1,6 @@
 @font-face {
     font-family: RobotoFontH1;
-    src: url(/barber/fonts/Roboto-Regular.ttf);
+    src: url(fonts/Roboto-Regular.ttf);
 }
 
 html,
@@ -73,6 +73,7 @@ body {
 
 #button:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 #bg-icon {
@@ -114,6 +115,7 @@ body {
     opacity: 0.6;
     font-size: 24px;
     font-family: RobotoFontH1;
+    margin: auto;
 
 }
 

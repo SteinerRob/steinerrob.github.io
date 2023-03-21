@@ -2,6 +2,8 @@
 <html>
    <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+
       <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LWMKBBVHL"></script>
       <script>
@@ -11,12 +13,31 @@
          
          gtag('config', 'G-7LWMKBBVHL');
       </script>
+      
+      <!-- Meta Pixel Code -->
+      <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '892906181763563');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=892906181763563&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Meta Pixel Code -->
+
       <link rel="icon" type="image/png" href="media/bg-icon.png">
       <meta name="msapplication-TileColor" content="#da532c">
       <meta name="msapplication-config" content="media/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
-      <title>Barber shop Gajdica</title>
-      <link rel="stylesheet" href="Style.css">
+      <title>Alex's Barbershop</title>
+      <link rel="stylesheet" href="style.css">
    </head>
    <body>
       <div id="overlay"></div>
@@ -36,21 +57,24 @@
       </div>
       <div id="contact">
          <img id="bg-icon" src="media/bg-icon.png">
-         <h1 id="headtitle"> Better Barber Gelnica </h1>
+         <h1 id="headtitle"> Alex's Barbershop </h1>
          <a class="links" href="tel:+421 911 036 333">+421 911 036 333</a>
-         <a class="links" href="mailto:alex@betterbarber.gl">alex@betterbarber.gl</a>
-         <a href="https://google.com">
-         <button id="button" style="margin-top: 20px;">
+         <a class="links" href="mailto:alex@alexbarber.sk">alex@alexbarber.sk</a>
+         <div style="min-height: 20px;">
+
+         </div>
+         <a style="margin: auto;" href="https://services.bookio.com/alexs-barbershop/widget">
+         <button id="button" >
          Rezervovať sa
          </button>
          </a>
       </div>
       <div  id="buttons">
-         <a href="https://goo.gl/maps/aVQB44a4yHfMYGZB7" style="margin-left: auto; margin-right: 0px; padding: 0px;">
-         <img id="ig-button" src="/barber/media/iglogo.png">  
+         <a href="https://www.instagram.com/gajdicaalex/" style="margin-left: auto; margin-right: 0px; padding: 0px;">
+         <img id="ig-button" src="media/iglogo.png">  
          </a>
-         <a href="https://goo.gl/maps/aVQB44a4yHfMYGZB7" style="margin-left: 0px; margin-right: auto; padding: 0px;">
-         <img id="map-button" src="/barber/media/gmlogo.png">  
+         <a href="https://goo.gl/maps/euPa2s28PNmcX5yG9" style="margin-left: 0px; margin-right: auto; padding: 0px;">
+         <img id="map-button" src="media/gmlogo.png">  
          </a>
       </div>
    </body>
