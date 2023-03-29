@@ -21,7 +21,6 @@ if (d.getElementById(id)) return;
 js = d.createElement(s); js.id = id;
 js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
-
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <script>
@@ -31,7 +30,7 @@ fjs.parentNode.insertBefore(js, fjs);
     }
 
 </script>
-<div id="buttonshare" class="fb-share-button" 
+<div id="buttonshare" onclick="alert('hello pici')" class="fb-share-button" 
 data-href="https://steinerrob.github.io/experimental/index.html" 
 data-layout="button">
 </div>
@@ -39,7 +38,7 @@ data-layout="button">
 
 
 <div>
-    <H1 id="myTitle">3</H1>
+    <H1 id="myTitle">4</H1>
 </div>
 </body>
 </html>
