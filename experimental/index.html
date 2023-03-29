@@ -23,10 +23,19 @@ js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<script>
+    document.getElementById("buttonshare").addEventListener("click", myFunction);
+    function myFunction(){
+        document.getElementById("myTitle").style.color = 'red';
+    }
 
-<div class="fb-share-button" 
+</script>
+<div id="buttonshare" class="fb-share-button" 
 data-href="https://steinerrob.github.io/experimental/index.html" 
 data-layout="button">
+</div>
+<div>
+    <H1 id="myTitle">1</H1>
 </div>
 </body>
 </html>
