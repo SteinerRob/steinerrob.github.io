@@ -21,12 +21,11 @@ if (d.getElementById(id)) return;
 js = d.createElement(s); js.id = id;
 js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
-alert("Button components loaded");
 
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <script>
-    document.addEventListener("click", myFunction);
+    document.getElementById("buttonshare").addEventListener("click", myFunction);
     function myFunction(){
         alert(" hello");
     }
@@ -40,7 +39,7 @@ data-layout="button">
 
 
 <div>
-    <H1 id="myTitle">2</H1>
+    <H1 id="myTitle">3</H1>
 </div>
 </body>
 </html>
