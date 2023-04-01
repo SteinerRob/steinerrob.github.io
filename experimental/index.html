@@ -12,6 +12,11 @@
     <meta property="og:title"         content="MyBlog " />
     <meta property="og:description"   content="Here goes description bla bla bla " />
     <meta property="og:image"         content="https://steinerrob.github.io/experimental/Habits.jpg" />
+    <script>
+        function myFunction(){
+        alert("fuck");
+    }
+    </script>
     </head>
 <body>
     <div id="fb-root"></div>
@@ -24,20 +29,37 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-<div  id="buttonshare1"  class="fb-share-button" 
+<div  id="buttonshare1" onclick="myFunction()" class="fb-share-button" 
 data-href="https://steinerrob.github.io/experimental/index.html" 
 data-layout="button">
 </div>
 
-<div  id="buttonshare2"  class="fb-share-button" 
-data-href="https://steinerrob.github.io/experimental/index.html" 
-data-layout="button">
+<button id="fakeBtn"> Fake Button </button>
+
+<div id="fkDiv" style="margin: 20px; width: 40px; height: 40px; background-color: red;" >
 </div>
 
-<div  id="buttonshare3"  class="fb-share-button" 
-data-href="https://steinerrob.github.io/experimental/index.html" 
-data-layout="button">
-</div>
+<script>
+    
+    
+    const shareBut = document.getElementById("buttonshare1");
+    const fakeBtn = document.getElementById("fakeBtn");
+    const fkDiv = document.getElementById("fkDiv")
+    
+    shareBut.addEventListener("click", function ()
+    {
+        console.log("You pressed share button ");
+    })
+
+    fakeBtn.addEventListener("click", function ()
+    {
+        console.log("You pressed fake button");
+    })
+    fkDiv.addEventListener("click", function ()
+    {
+        console.log("You clicked on fake div");
+    })
+</script>
 
 <div>
     <H1 id="myTitle">8</H1>
