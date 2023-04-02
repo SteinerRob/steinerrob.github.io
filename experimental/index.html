@@ -13,23 +13,24 @@
     <meta property="og:description"   content="Here goes description bla bla bla " />
     <meta property="og:image"         content="https://steinerrob.github.io/experimental/Habits.jpg" />
     <script>
-        function myFunction(){
-        alert("fuck");
+        function myFunction(imageOg){
+        document.querySelector('meta[name="image"]').setAttribute("content", imageOg);
     }
     </script>
     </head>
 <body>
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+    (function(d, s, id) {
 var js, fjs = d.getElementsByTagName(s)[0];
 if (d.getElementById(id)) return;
 js = d.createElement(s); js.id = id;
 js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
-
-<div  id="buttonshare1" onclick="myFunction()" class="fb-share-button" 
+<div  id="buttonshare1" onmouseover="myFunction('')" class="fb-share-button" 
 data-href="https://steinerrob.github.io/experimental/index.html" 
 data-layout="button">
 </div>
@@ -59,10 +60,17 @@ data-layout="button">
     {
         console.log("You clicked on fake div");
     })
+    
 </script>
 
 <div>
     <H1 id="myTitle">8</H1>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://steinerrob.github.io&display=popup"> share this </a>
+</div>
+<div onclick="myFunction()" class="fb-share-button" data-href="https://steinerrob.github.io/blog.html#article1" data-layout="" data-size="">
+    <a target="_blank" class="fb-share-button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsteinerrob.github.io%2Fblog.html%23article1&amp;src=sdkpreparse"" class="fb-xfbml-parse-ignore">
+        <img src="web_cv/FbshareBtn.png" style="width: 75px; height: 30px">
+    </a>
 </div>
 </body>
 </html>
