@@ -76,7 +76,8 @@
         var urlImg = "https://steinerrob.github.io/" + ogImage;
         alert(urlImg)
         document.querySelectorAll('meta[name="og:image"]').setAttribute("content", urlImg);
-        
+        $('meta[property=og\\:image]').attr('content', urlImg);
+
         document.querySelector('meta[name="og:title"]').setAttribute("content", title);
     }
 </script>
