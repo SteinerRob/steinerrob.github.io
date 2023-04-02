@@ -26,8 +26,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <meta property="og:title"         content="Title " />
-    <meta property="og:image"         content="https://steinerrob.github.io/experimental/Habits.jpg" />
+    <meta property="og:title" content="Title " />
+    <meta property="og:image" content="https://steinerrob.github.io/experimental/Habits.jpg" />
 
     <title>Welcome on my Blog</title>
     <link rel="icon" href="./web_cv/faviconB-32x32.png">
@@ -71,12 +71,14 @@
 <script type="text/javascript" charset="UTF-8" src="./web_cv/common.js"></script><script type="text/javascript" charset="UTF-8" src="./web_cv/util.js"></script><script type="text/javascript" charset="UTF-8" src="./web_cv/marker.js"></script><script type="text/javascript" charset="UTF-8" src="./web_cv/map.js"></script><script type="text/javascript" charset="UTF-8" src="./web_cv/overlay.js"></script><script type="text/javascript" charset="UTF-8" src="./web_cv/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./web_cv/controls.js"></script>
 <script src="scripts.js"></script>
 <script>
-    function SetOgImage(ogImage, title){
+    function SetOgImage(ogImage, title)
+    {
         var urlImg = "https://steinerrob.github.io/" + ogImage;
         alert(urlImg)
-    document.querySelector('meta[name="image"]').setAttribute("content", urlImg);
-    document.querySelector('meta[name="title"]').setAttribute("content", title);
-}
+        document.querySelectorAll('meta[property=og\\:image]')[0].setAttribute('content', urlImg)
+        document.querySelectorAll('meta[property=og\\:title]')[0].setAttribute('content', title)
+
+    }
 </script>
 </head>
 
